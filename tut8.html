@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h2>HTML Form</h2>
+    <hr />
+    <form action="backend.php">
+      <div><label for="username">User name</label> <input type="text" name="username" id="username"/></div>
+      <div><label for="pswd"> Password </label><input type="password" name="password" id="pswd"/></div>
+      <div><label for="eml">Email</label> <input type="email" name="email" id="eml"/></div>      
+      <div><label for="dob">Date of birth</label> <input type="date" name="dob" id="dob"/></div>
+      <div><label for="age">Age</label> <input type="number" name="age" id="age"/></div>
+      <div>Gender: </div>
+      <di>
+      Male: <input type="radio" name="gender" /> 
+      Female: <input type="radio" name="gender" /> 
+      Other: <input type="radio" name="gender" />
+    </div>
+    <div>
+        <label id="jobrole">Select role</label>
+        <select name="role" id="jobrole">
+            <option value="dev">Developer</option>
+            <option value="tester" selected>Tester</option>
+            <option value="devops">DeveOps</option>
+        </select>
+    </div>
+    <div>
+       Description: <textarea name="description" cols="70" rows="10"></textarea>
+    </div>
+     <label for="agree">I agree to submit</label><div><input checked type="checkbox" name="agreement" id="agree"/></div>
+      <div><input type="submit" value="Submit Now" />
+     <input type="reset" value="Reset Now" /></div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alignment</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        background-color: rgb(167, 128, 101);
+        border: 3px solid saddlebrown;
+        margin: auto;
+      }
+      .item {
+        border: 7px solid rgb(241, 179, 179);
+        margin: 10px;
+        padding: 5px;
+        background: rgb(221, 198, 198);
+      }
+      #fruit {
+        float: left;
+        width: 48%;
+      }
+      #computer {
+        float: left;
+        width: 48%;
+      }
+      #stationary {
+        /* float: left; */
+        clear: both;
+        width: 100%;
+      }
+      p{
+          text-align: justify;
+      }
+      h1{
+          /* text-align: center; */
+          margin: auto;
+          width: 455px; /* if h1 is removed then no effect of margin: auto because they h1 is a block element*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+      <div class="item" id="fruit">
+        <h2>Fruit Para</h2>
+        <p class="para" id="fruitPara">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          provident, sequi eaque corporis quisquam consequuntur corrupti
+          excepturi perferendis sunt necessitatibus sit, temporibus laudantium
+          numquam ipsa suscipit magni repellat et harum! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Delectus repudiandae illo, soluta
+          placeat aperiam numquam doloremque culpa? Totam, vero iste! Eos
+          ratione vitae, magni iure facere delectus laudantium recusandae sequi.
+        </p>
+      </div>
+      <div class="item" id="computer">
+        <h2>Computer Para</h2>
+        <p class="para" id="computerPara">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          provident, sequi eaque corporis quisquam consequuntur corrupti
+          excepturi perferendis sunt necessitatibus sit, temporibus laudantium
+          numquam ipsa suscipit magni repellat et harum! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Dicta, provident praesentium iste
+          at id tempora placeat, alias, ipsa odio totam atque voluptate
+          voluptatum voluptatem rerum odit culpa! Alias, quisquam! Sit.
+        </p>
+      </div>
+      <div class="item" id="stationary">
+        <h2>Stationary Para</h2>
+        <p class="para" id="stationaryPara">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          provident, sequi eaque corporis quisquam consequuntur corrupti
+          excepturi perferendis sunt necessitatibus sit, temporibus laudantium
+          numquam ipsa suscipit magni repellat et harum!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

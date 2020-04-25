@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: aqua;
+            color: red;
+        }
+        div p{
+            background-color: salmon;
+            color: sienna;
+            font-size: 32px;
+        }
+        p{
+            background-color: slateblue;
+            color: snow;
+        }
+        div > p{
+            background-color: springgreen;
+            color: tomato;
+            font-style: italic;
+            font-size: 24px;
+        }
+
+        div + p{
+            background-color: yellow;
+            color: yellowgreen;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <div class="container">
+        <div>
+            <p>Inside div-div-p Lorem ipsum dolor sit amet.</p>
+        </div>
+        <p>Inside div-p & sibling to above div Lorem ipsum dolor sit amet.</p>
+        <div>
+            <div>
+                <p>Inside div-div-div-p Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li> <p> Inside div-div-ul-li-p Lorem ipsum dolor sit amet.</p></li>
+                <li>Inside div-div-ul-li Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+    </div>
+    <p>Outside of container div & sibling to above div Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>

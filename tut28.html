@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        height: 500px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        /* flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse; */
+
+        /* flex-wrap: wrap; */
+        /* flex-flow: row-reverse wrap;
+            flex-wrap: wrap-reverse;
+            flex-wrap: nowrap; */
+
+        /* justify-content: center;
+            justify-content: start;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; */
+
+        /* align-items: stretch; */
+        /* align-items: center;
+            align-items: flex-end;
+            align-items: flex-start; */
+      }
+      .item {
+        width: 100px;
+        height: 50px;
+        background-color: cadetblue;
+        border: 2px solid purple;
+        margin: 4px;
+        padding: 4px;
+      }
+      #item-1 {
+        order: 40;
+        /* flex-grow: 3; */
+        flex: 4 4 400px;
+        align-self: flex-start;
+      }
+      #item-2 {
+          flex-basis: 320px;
+        /* order: 2;
+        flex-grow: 2; */
+        align-self: center;
+      }
+      #item-3 {
+          flex-shrink: 2;
+          align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox tutorial practice</h1>
+    <div class="container">
+      <div class="item" id="item-1">One box</div>
+      <div class="item" id="item-2">Two box</div>
+      <div class="item" id="item-3">Three box</div>
+      <!-- <div class="item" id="item-4">Four box</div>
+      <div class="item" id="item-5">Five box</div>
+      <div class="item" id="item-6">Six box</div> -->
+    </div>
+  </body>
+</html>

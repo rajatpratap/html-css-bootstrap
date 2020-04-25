@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Selector & Button CSS</title>
+    <style>
+        .container{
+            border: 20px solid rgb(218, 218, 168);
+            background-color: brown;
+            padding: 34px;
+            margin: auto;
+            width: 600px;
+        }
+        .btn{
+            background-color:chartreuse;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            background-color: cyan;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            background-color: cyan;
+        }
+        a:visited{
+            background-color: rgb(255, 0, 106);
+        }
+        a:active{
+            color: violet;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="cont1">
+      <h3>Lorem ipsum dolor sit.</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas eligendi
+        laborum, obcaecati odit aperiam ex quae nobis cum veritatis, mollitia
+        eos rerum tenetur provident tempore doloremque. Nostrum et sequi iure.
+      </p>
+      <a href="https://google.com" class="btn">Read More</a>
+      <button class="btn">Contact Us</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box shadow & Tex shadow</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .card {
+        border: 2px solid red;
+        padding: 12px 24px;
+        margin: 12px 20px;
+        /* box-shadow: 10px 5px 2px 7px grey; */
+        /* box-shadow: inset 20px 40px pink; */
+        box-shadow: 12px 12px blueviolet, 20px 20px red;
+      }
+      h1{
+          text-shadow: 2px 2px rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="card-1">
+        <h1>Card-1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ea aut
+          vero temporibus ullam nihil voluptatibus, vel voluptas dolore cum
+          rerum beatae? Facilis libero corporis quis sint, iste consequuntur
+          aspernatur.
+        </p>
+      </div>
+      <div class="card" id="card-2">
+        <h1>Card-2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ea aut
+          vero temporibus ullam nihil voluptatibus, vel voluptas dolore cum
+          rerum beatae? Facilis libero corporis quis sint, iste consequuntur
+          aspernatur.
+        </p>
+      </div>
+      <div class="card" id="card-3">
+        <h1>Card-3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ea aut
+          vero temporibus ullam nihil voluptatibus, vel voluptas dolore cum
+          rerum beatae? Facilis libero corporis quis sint, iste consequuntur
+          aspernatur.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

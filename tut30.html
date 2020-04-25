@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            background-color: rgb(70, 109, 30);
+            color: rgb(202, 210, 223);
+            font-size: 50px;
+            text-align: center;
+            display: none;
+        }
+        @media screen and (max-width: 300px) {
+            #box-1{
+                display: block;
+                color: lightgoldenrodyellow;
+                background-color: lightcoral;
+            }
+        }
+        @media screen and (max-width: 600px) and (min-width: 300px) {
+            #box-2{
+                display: block;
+                color: rgb(207, 207, 15);
+                background-color: rgb(226, 115, 24);
+            }
+        }
+        @media screen and (max-width: 900px) and (min-width: 600px) {
+            #box-2{
+                display: block;
+                color: rgb(255, 255, 255);
+                background-color: rgb(8, 182, 153);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">1111 Lorem ipsum dolor sit amet.</div>
+    <div class="box" id="box-2">2222 Lorem ipsum dolor sit amet.</div>
+    <div class="box" id="box-3">3333 Lorem ipsum dolor sit amet.</div>
+    <div class="box" id="box-4">4444 Lorem ipsum dolor sit amet.</div>
+</body>
+</html>
